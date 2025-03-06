@@ -11,9 +11,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && chmod +x dist/*.js",
+    "build": "npx tsc && chmod +x dist/*.js",
     "prepare": "npm run build",
-    "watch": "tsc --watch"
+    "watch": "npx tsc --watch"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.0.1",
