@@ -78,7 +78,7 @@ MCP Server for the Zulip API, enabling AI assistants like Claude to interact wit
 3. Get the API credentials:
    - Bot's email address
    - Bot's API key (displayed when you create the bot)
-   - Zulip instance URL (e.g., https://zulip.example.com)
+   - Zulip instance URL (e.g., https://example.zulipchat.com)
 
 ### Usage with Claude Desktop
 
@@ -96,9 +96,9 @@ Add the following to your `claude_desktop_config.json`:
         "@modelcontextprotocol/server-zulip"
       ],
       "env": {
-        "ZULIP_EMAIL": "your-bot@zulip.example.com",
+        "ZULIP_EMAIL": "your-bot@example.zulipchat.com",
         "ZULIP_API_KEY": "your-bot-api-key",
-        "ZULIP_URL": "https://zulip.example.com"
+        "ZULIP_URL": "https://example.zulipchat.com"
       }
     }
   }
@@ -125,9 +125,9 @@ Add the following to your `claude_desktop_config.json`:
         "mcp/zulip"
       ],
       "env": {
-        "ZULIP_EMAIL": "your-bot@zulip.example.com",
+        "ZULIP_EMAIL": "your-bot@example.zulipchat.com",
         "ZULIP_API_KEY": "your-bot-api-key",
-        "ZULIP_URL": "https://zulip.example.com"
+        "ZULIP_URL": "https://example.zulipchat.com"
       }
     }
   }

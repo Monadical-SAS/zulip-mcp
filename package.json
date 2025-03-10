@@ -1,0 +1,27 @@
+{
+  "name": "@modelcontextprotocol/server-zulip",
+  "version": "0.1.0",
+  "description": "MCP server for interacting with Zulip",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcp-server-zulip": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx tsc && chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "npx tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1",
+    "node-fetch": "^3.3.2",
+    "zulip-js": "^2.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.3.3"
+  }
+}
