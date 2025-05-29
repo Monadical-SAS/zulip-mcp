@@ -1,0 +1,29 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['dist/index.js'], env: { ZULIP_EMAIL: config.zulipEmail, ZULIP_API_KEY: config.zulipApiKey, ZULIP_URL: config.zulipUrl } })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - zulipEmail
+      - zulipApiKey
+      - zulipUrl
+    properties:
+      zulipEmail:
+        type: string
+        description: The Zulip bot's email address
+      zulipApiKey:
+        type: string
+        description: The Zulip bot's API key
+      zulipUrl:
+        type: string
+        description: The Zulip instance base URL
+  exampleConfig:
+    zulipEmail: bot@example.zulipchat.com
+    zulipApiKey: abc123xyz
+    zulipUrl: https://example.zulipchat.com

@@ -1,4 +1,5 @@
 # Zulip MCP Server
+[![smithery badge](https://smithery.ai/badge/@Monadical-SAS/zulip-mcp)](https://smithery.ai/server/@Monadical-SAS/zulip-mcp)
 
 MCP Server for the Zulip API, enabling AI assistants like Claude to interact with Zulip workspaces.
 
