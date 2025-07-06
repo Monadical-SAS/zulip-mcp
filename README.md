@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/monadical-sas-zulip-mcp-badge.png)](https://mseep.ai/app/monadical-sas-zulip-mcp)
+
 # Zulip MCP Server
 
 MCP Server for the Zulip API, enabling AI assistants like Claude to interact with Zulip workspaces.
