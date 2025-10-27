@@ -1,0 +1,21 @@
+Apache Zulip MCP Server
+Copyright 2025 The Apache Software Foundation
+
+This product includes software developed at monadical.com
+The Apache Software Foundation (/).
+
+This software includes the following third-party components:
+
+* @modelcontextprotocol/sdk
+  Licensed under the MIT License
+  https://github.com/modelcontextprotocol/typescript-sdk
+
+* zulip-js
+  Licensed under the MIT License
+  Copyright (c) Zulip contributors
+  https://github.com/zulip/zulip-js
+
+* node-fetch
+  Licensed under the MIT License
+  Copyright (c) 2016 - 2020 Node Fetch Team
+  https://github.com/node-fetch/node-fetch

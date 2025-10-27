@@ -2,7 +2,7 @@
   "name": "@modelcontextprotocol/server-zulip",
   "version": "0.1.0",
   "description": "MCP server for interacting with Zulip",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "bin": {
     "mcp-server-zulip": "dist/index.js"

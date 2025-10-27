@@ -151,8 +151,18 @@ docker build -t mcp/zulip .
 
 ## License
 
-To apply the ALv2 to a new software distribution, include one copy of the license text by copying the contents of [LICENSE-2.0.txt](https://www.apache.org/licenses/LICENSE-2.0.txt) into a file called LICENSE in the top directory of your distribution. If the distribution is a jar or tar file, try to add the LICENSE file first in order to place it at the top of the archive. This covers the collective licensing for the distribution.
+Copyright 2025 The Apache Software Foundation
 
-In addition, you **must** include a correct [NOTICE file](https://www.apache.org/legal/src-headers.html#notice) in the same directory as the LICENSE file.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-Each original source document (code and documentation, but not the LICENSE and NOTICE files) **should** include [a short license header](https://www.apache.org/legal/src-headers.html#headers) at the top. If the distribution contains documents not covered by an [ICLA](https://www.apache.org/licenses/icla.txt), [CCLA](https://www.apache.org/licenses/cla-corporate.txt) or [Software Grant](https://www.apache.org/licenses/software-grant.txt) (such as third-party libraries), consult the [policy guide](https://www.apache.org/legal/resolved.html).
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+This product includes third-party software components. See the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for details.
