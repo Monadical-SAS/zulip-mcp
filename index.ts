@@ -320,9 +320,9 @@ class ZulipClient {
       ];
       
       const params = {
-        narrow: JSON.stringify(narrow),
-        num_before: Math.floor(limit / 2),
-        num_after: Math.floor(limit / 2),
+        narrow: narrow,
+        num_before: limit,
+        num_after: 0,
         anchor: anchor,
       };
       
@@ -344,8 +344,9 @@ class ZulipClient {
 
   async subscribeToStream(streamName: string) {
     try {
-      const subscriptions = [{ name: streamName }];
-      return await this.client.streams.subscribe({ subscriptions: JSON.stringify(subscriptions) });
+      return await this.client.callEndpoint("users/me/subscriptions", "POST", {
+        subscriptions: [{ name: streamName }],
+      });
     } catch (error) {
       console.error("Error subscribing to stream:", error);
       throw error;
