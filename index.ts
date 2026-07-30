@@ -320,9 +320,9 @@ class ZulipClient {
       ];
       
       const params = {
-        narrow: JSON.stringify(narrow),
-        num_before: Math.floor(limit / 2),
-        num_after: Math.floor(limit / 2),
+        narrow: narrow,
+        num_before: limit,
+        num_after: 0,
         anchor: anchor,
       };
       
