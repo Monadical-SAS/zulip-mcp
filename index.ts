@@ -344,8 +344,9 @@ class ZulipClient {
 
   async subscribeToStream(streamName: string) {
     try {
-      const subscriptions = [{ name: streamName }];
-      return await this.client.streams.subscribe({ subscriptions: JSON.stringify(subscriptions) });
+      return await this.client.callEndpoint("users/me/subscriptions", "POST", {
+        subscriptions: [{ name: streamName }],
+      });
     } catch (error) {
       console.error("Error subscribing to stream:", error);
       throw error;
